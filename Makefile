@@ -12,7 +12,7 @@ endif
 ifndef TAG
 	$(error TAG is not set)
 endif
-	@echo "docker build . -t ruanlas/$(IMAGE_NAME):$(TAG)"
+	docker build . -t ruanlas/$(IMAGE_NAME):$(TAG)
 
 push-image: build-image
-	@echo "docker push ruanlas/$(IMAGE_NAME):$(TAG)"
+	docker push ruanlas/$(IMAGE_NAME):$(TAG)
