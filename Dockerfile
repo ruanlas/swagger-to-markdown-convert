@@ -1,4 +1,4 @@
-FROM node:12.2.0
+FROM node:20.9.0
 
 RUN npm install -g swagger-markdown
 
